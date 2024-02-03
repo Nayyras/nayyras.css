@@ -1,0 +1,591 @@
+       /* Made by naraya_ramadhan */
+      /* Hope enjoy it uwu */
+@import url(https://cdn.discordapp.com/attachments/942887952063811584/945341393663037490/in-game.min.css);
+
+/* Home */
+:root {
+    --asscentColor: #ffd82d;
+}
+
+/* Fonts */
+@font-face {
+    font-family: gamefont;
+    src: url("https://raw.githubusercontent.com/MOF1/krunker_css/main/css/fonts/Steradian-Bold.otf");
+}
+* {
+    font-family: gamefont;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 5px #256d7b, 0 0 5px var(--asscentColor), 0 0 5px var(--asscentColor), 0 0 5px var(--asscentColor), 0 0 6px var(--asscentColor), 0 0 7px var(--asscentColor), 0 0 8px var(--asscentColor);
+    }
+}
+/* Glows Clan Name */
+.clan-tag,
+.label{
+    color: var(--asscentColor) !important;
+    -webkit-animation: glow 2s ease-in-out infinite alternate;
+    -moz-animation: glow 2s ease-in-out infinite alternate;
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+
+/* End Game Screen */
+
+.end-modal {
+    background: url(https://cdn.discordapp.com/attachments/1171073102675972166/1202180701924110356/w.gif?ex=65cc8506&is=65ba1006&hm=e21b04c3d025dd3beb1573229890aac2cea3098b35da8564a8970fe8a53b01f6&) repeat !important;
+    background-size: cover !important;
+}
+/* Removes Element */
+.text-icon,
+#logo,
+.soc-group,
+.avatar-info,
+.progress-top, 
+.progress-label,
+.borders{
+    display: none !important;
+}
+
+.gun {
+    border: 1px solid var(--asscentColor) !important;
+}
+
+/* Removes Background */
+.box,
+.input,
+.quests,
+.quest,
+.progress-line,
+.tip,
+.amount,
+.reward,
+.card-cont,
+.icon-btn,
+.left-icons,
+.soc-group,
+.card-cont,
+.right-container,
+.level,
+.player,
+.button,
+.borders,
+.progress[data-v-49c6809c],
+.background,
+.left,
+.subjects,
+.container-card[data-v-1bf1e387] {
+    background: transparent !important;
+    border: none !important;
+    
+}
+
+.progress[data-v-0f7a25c2] {
+    background: transparent !important;
+    box-shadow: none !important
+}
+
+.button,
+.container-card[data-v-1bf1e387],
+#clientJoinButton {
+    background: transparent !important;
+    border: 1px solid var(--asscentColor) !important;
+}
+.button:hover {
+    background: transparent !important;
+}
+
+.quests,
+.select-mods-cont,
+.tab-info {
+    background-color: #0006 !important;
+}
+
+/* Custom Backgorund */
+#app > div.interface.text-2 > div.background {
+    background-image: url("https://cdn.discordapp.com/attachments/1171073102675972166/1202180701924110356/w.gif?ex=65cc8506&is=65ba1006&hm=e21b04c3d025dd3beb1573229890aac2cea3098b35da8564a8970fe8a53b01f6&") !important;
+    background-size: cover !important;
+}
+#app > div.interface.text-2 > div.background > div.pattern-bg,
+#app > div.interface.text-2 > div.background > div.bg-radial {
+    display: none !important
+}
+
+.selected {
+    background: var(--asscentColor) !important;
+}
+
+/* Text Color */
+.level-value,
+.levels,
+.clan-tag,
+.top-name,
+.list-labels,
+.active,
+.level,
+.header,
+.lvl-leader,
+.label-primary,
+.awards-span,
+.champions-league,
+.champions-scores,
+.all-scores-label,
+.stat-name,
+.progress-level-value,
+.amount,
+.head {
+    color: var(--asscentColor) !important;
+}
+.tab:hover,
+.nav:hover {
+    color: var(--asscentColor) !important;
+}
+
+/*level bar*/
+
+#auth-user > div > div.card-cont.user-info > div.progress-lvl > div.progress-line {
+    margin-bottom: 2rem !important;
+    margin-left: 2rem !important;
+    width: 200%;
+}
+
+.settings {
+    padding: 20px !important;
+}
+.moneys {
+    padding-top: 1rem !important;
+}
+/* Inv & Friends */
+#right-icons [data-v-ae524044] {
+    height: 3.2rem;
+}
+#right-icons > div.icon-btn.text-1 {
+    width: 139px;
+    font-size: 18px;
+    height: 65px;
+}
+#right-icons [data-v-1cbd79ff] {
+    width: 139px;
+    font-size: 18px;
+    height: 65px;
+}
+#right-icons [data-v-b8de1e14] {
+    display: none;
+}
+.right-icons .gun-img {
+    display: none;
+}
+.right-icons .icon-btn {
+    background: transparent !important;
+    border-bottom: transparent !important;
+    border: none !important;
+}
+
+/* Server & Play */
+.select-mod,
+.select-region {
+    background: transparent !important;
+    border-right: none !important;
+    border-left: none !important;
+    border-top: none !important;
+    border-bottom: none !important;
+}
+.select-regions-cont[data-v-6ef47e92] {
+    background: transparent !important;
+    border-right: none !important;
+    border-left: none !important;
+    border-top: none !important;
+    border-bottom: none !important;
+}
+.join-using-link {
+    background: transparent !important;
+    border-right: none !important;
+    border-left: none !important;
+    border-top: none !important;
+    border-bottom: none !important;
+}
+
+.play-btn {
+    margin-right: 0 !important;
+    margin-bottom: -8px !important;
+    width: 410px !important;
+    height: 200px !important;
+    box-shadow: none !important;
+    text-shadow: var(--glow) !important;
+    box-shadow: none !important;
+    opacity: var(--opacity) !important;
+    background-color: var(--main) !important;
+    --hover-color: var(--main) !important;
+    --top: var(--trans) !important;
+    --bottom: var(--trans) !important;
+}
+
+#play .button {
+    padding: 0.4em 0.5em !important;
+    transform: none !important;
+    opacity: var(--opacity);
+    box-shadow: none !important;
+    -webkit-text-stroke-color: var(--trans) !important;
+}
+
+.button:after {
+    border-radius: var(--br) !important;
+    border: none !important;
+}
+
+.triangle-bottom,
+.triangle {
+    border: none !important;
+}
+
+.play-btn .text {
+    font-size: 0;
+}
+
+.play-btn .text::before {
+    content: "Chill" !important;
+      color:rgb(255, 255, 255) !important;
+    font-size: 72px !important;
+    text-shadow: var(--glow) !important;
+}
+
+
+/*	Ad Removal */
+#ad-bottom,
+#ad-left,
+#google_ads_iframe_\/421469808\,19506225\/kirka\.io_336x280_0__container__ {
+    visibility: hidden;
+}
+.className {
+    display: none !important;
+}
+/* Mode Selection */
+.select-mods-cont,
+.select-mods-cont > hr {
+    background: #000000ab!important;
+    border: none !important;
+}
+.custom-checkbox > input:checked + span[data-v-47e1b746]:before {
+    background-color: var(--asscentColor);
+    border-color: var(--asscentColor);
+}
+
+/* Check Box */
+.private-btn > span[data-v-47e1b746] {
+    content: url(https://media.discordapp.net/attachments/523517791886770188/953239076457316382/openlock.png);
+    position: fixed;
+    left: 25px;
+    width: 40px;
+}
+
+.private-btn > input:checked + span[data-v-47e1b746] {
+    content: url(https://media.discordapp.net/attachments/523517791886770188/953239093955948544/lock.png);
+}
+
+.custom-checkbox > span[data-v-47e1b746]:before {
+    border-radius: 50px;
+    background-color: white;
+    border: none;
+}
+
+.custom-checkbox > input:checked + span[data-v-47e1b746]:before {
+    background-color: #373737;
+    }
+/* kill icon */
+.animate-cont {
+    content: url(https://cdn.discordapp.com/attachments/1171073102675972166/1202209546387599411/idc.png?ex=65cc9fe3&is=65ba2ae3&hm=2b4e540fea8a7e928b4453df31a640a49b0cb0a6f89409092acc4c8aab45fc49&);
+    height: 100px;
+    text-align: center;
+    display: inline-block;
+
+}
+
+/* chat */
+.desktop-game-interface #WMNn {
+    transform: scale(0);
+    transition-duration: 0.25s !important;
+}
+
+.desktop-game-interface #WMNn:focus {
+    transform: scale(1);
+}
+.clans,
+.hub-container,
+.mobile-fullscreen,
+.add-friends,
+.tab-bar,
+.top-items,
+.subject,
+.inventory .avatar,
+.inventory .bottom {
+    background: transparent !important;
+}
+
+.head-text,
+.reset-time,
+.info-awards,
+.news,
+.list-cont,
+.card-profile,
+.profile .k-d,
+.profile .statistics,
+.profile-cont .progress[data-v-d2be3bc6]{
+    background: transparent !important;
+    box-shadow: none !important;
+}
+
+.tabs {
+    background: transparent !important;
+    border-bottom: none !important;
+    box-shadow: none !important;
+    border-right: none !important;
+}
+
+.active-tab,
+.tab {
+    background: transparent !important;
+    border-right: none !important;
+    border-left: none !important;
+}
+
+.limit {
+    border-left: none !important;
+}
+
+.top-bar,
+.home,
+.name-page {
+    display: none !important;
+}
+
+.container,
+.quests,
+.cont {
+    background: transparent !important;
+    backdrop-filter: blur(10px);
+    box-shadow: none !important;
+}
+
+
+.champions-list {
+    box-shadow: none !important;
+}
+
+.subjects,
+.gun {
+    background: transparent !important;
+}
+
+.profile .you {
+    visibility: hidden;
+}
+.top[data-v-319b95e8] {
+    background: transparent !important;
+    border-right: none !important;
+    border-left: none !important;
+}
+.item[data-v-319b95e8] {
+    background: transparent !important;
+    border-right: none !important;
+    border-left: none !important;
+}
+.champions-list[data-v-3ade8f70] {
+    background: transparent !important;
+    border-right: none !important;
+    border-left: none !important;
+}
+.items .item[data-v-3ade8f70] {
+    background: transparent !important;
+    border-right: none !important;
+    border-left: none !important;
+}
+.card-head[data-v-5b2dc87c] {
+    background: transparent !important;
+    border-right: none !important;
+    border-left: none !important;
+}
+.list-container[data-v-3bcb580a] {
+    background: transparent !important;
+    border-right: none !important;
+    border-left: none !important;
+}
+.card-cont[data-v-040b7087] {
+    background: transparent !important;
+    border-right: none !important;
+    border-left: none !important;
+}
+.description[data-v-040b7087] {
+    background: transparent !important;
+    border-right: none !important;
+    border-left: none !important;
+}
+.all-scores[data-v-040b7087] {
+    background: transparent !important;
+    border-right: none !important;
+    border-left: none !important;
+}
+.champions-stat[data-v-040b7087] {
+    background: transparent !important;
+    border-right: none !important;
+    border-left: none !important;
+}
+.item-content[data-v-3bcb580a] {
+    background: transparent !important;
+    border-right: none !important;
+    border-left: none !important;
+}
+.server[data-v-679cb6a8] {
+    background: transparent !important;
+    border-bottom: transparent !important;
+    border: none !important;
+}  
+.player[data-v-68ad001e] {
+    background: transparent !important;
+    border-bottom: transparent !important;
+    border: none !important;
+}
+.right-container[data-v-68ad001e] {
+    background: transparent !important;
+    border-bottom: transparent !important;
+    border: none !important;
+}
+.crosshair-static {
+    visibility: visible !important;
+    position: absolute;
+    display: flex !important;
+}
+.messages[data-v-76a3fe0a] {
+    background: transparent !important;
+    border-bottom: transparent !important;
+    border: none !important;
+}
+.input[data-v-29d4a917] {
+    background: transparent !important;
+    border-bottom: transparent !important;
+    border: none !important;
+}
+.timer[data-v-1d4749de] {
+    background: transparent !important;
+    border-bottom: transparent !important;
+    border: none !important;
+}
+.bg[data-v-1d4749de] {
+    background: transparent !important;
+    border-bottom: transparent !important;
+    border: none !important;
+}
+.kill-bar-cont[data-v-e06e1414] {
+    background: transparent !important;
+    border-bottom: transparent !important;
+    border: none !important;
+}
+.head[data-v-a204db68] {
+    background: transparent !important;
+    border-bottom: transparent !important;
+    border: none !important;
+}
+.list[data-v-a204db68] {
+    background: transparent !important;
+    border-bottom: transparent !important;
+    border: none !important;
+}
+.mini-map-cont .name,
+.info-key-cont,
+.list-weapons,
+.mWwn,
+.instruction {
+    display: none !important;
+}
+
+.hp {
+    margin-right: 20%;
+}
+
+.hp-progress {
+    background-color: var(--asscentColor) !important;
+}
+
+.state {
+    position: fixed;
+    width: 300px;
+    top: 90%;
+    left: 37% !important;
+}
+
+.cont-endurance {
+    margin-left: 1.5%;
+}
+.endurance-progress {
+    background-color: var(--asscentColor) !important;
+}
+
+.weapons-cont {
+    position: fixed;
+    width: 300px;
+    top: 95%;
+    left: 5%;
+    margin-top: -100px;
+    margin-left: 252px;
+}
+
+.ammunition {
+    display: inline-block;
+    position: fixed;
+    left: calc(50%);
+    top: calc(73%)
+    
+}
+.bg[data-v-14e97ff8] {
+    background: transparent !important;
+    border-bottom: transparent !important;
+    border: none !important;
+}
+
+.player[data-v-3a61646a] {
+    background: transparent !important;
+    border-bottom: transparent !important;
+    border: none !important;
+}
+.progress,
+.progress-helper{
+    background: var(--asscentColor) !important;
+    display: block !important;
+    box-shadow: 0px 0px 20px 6px var(--asscentColor);
+}
+.progress[data-v-5aafd15a]{
+    box-shadow: 0px 0px 20px 6px var(--asscentColor);
+    background: var(--asscentColor) !important;
+}
+
+img.top-logo {
+  content: url(https://cdn.discordapp.com/attachments/775971082204348456/953027500966047754/loadbordertop.png) !important;
+}
+img.bottom-logo {
+  content: url(https://cdn.discordapp.com/attachments/775971082204348456/953027500450132008/loadborderbottom.png) !important;
+}
+/*  Ad Removal */
+.ad-bottom,
+.ad-left {
+    display: none !important;
+    visibility: hidden !important;
+}
+.className {
+    display: none !important;
+}
+/* Opacity hover */
+
+.avatar-info:hover,
+.level-value:hover,
+.profile .progress-line:hover,
+.left-icons:hover,
+.quests:hover,
+.select-mod:hover,
+.select-region:hover,
+.custom-checkbox>input:not(:disabled):not(:checked)+span:hover:before,
+#select-regions-cont:hover,
+#playerholderelement:hover,
+.container:hover {
+    opacity: 1 !important;
+    transition-duration: 1s !important;
+}
